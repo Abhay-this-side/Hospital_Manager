@@ -1,0 +1,174 @@
+/* Footer.css */
+
+.footer {
+    background: linear-gradient(135deg, #000000af, #1b059684);
+    color: #ced5da; /* White text color */
+    font-family: Arial, sans-serif;
+    padding: 20px 10px;
+    border-top: 1px solid #0cb2ef94;
+    width: 100%; /* Ensure the footer spans the full width */
+    margin: 0 auto;
+    text-align: center; /* Center align content */
+}
+
+.footer .content {
+    display: flex;
+    align-items: flex-start; /* Align items vertically at the top */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.footer .links,
+.footer .hours,
+.footer .contacts {
+    flex: 1 0 calc(33.33% - 50px); /* Adjusted width for each section with margin */
+    text-align: left; /* Align text to the left */
+    margin-top: 10px; /* Add some top margin */
+}
+
+.footer .links h4,
+.footer .hours h4,
+.footer .contacts h4 {
+    font-size: 1.2rem; /* Increased font size */
+    margin-bottom: 10px;
+    color: #b3d9f4; /* Cyan text color */
+}
+
+.footer .links ul,
+.footer .hours ul,
+.footer .contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .links ul li,
+.footer .hours ul li,
+.footer .contacts ul li {
+    margin-bottom: 5px;
+}
+
+.footer .links a {
+    color: #ccc; /* Light gray text color */
+    text-decoration: none;
+}
+
+.footer .links a:hover {
+    color:#00cccc;
+    text-decoration: none;
+}
+
+.footer .hours {
+    margin-left: -10px; /* Move the hours section to the left towards quick links */
+}
+
+.footer .hours ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.9rem; /* Decreased the font size for hours */
+}
+
+.footer .hours ul li {
+    margin-bottom: 5px;
+}
+
+.footer .contacts {
+    margin-left: 10px; /* Move the contacts section to the right */
+}
+
+.footer .contacts div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Increased the margin to create a gap */
+}
+
+.footer .contacts svg {
+    font-size: 1.6rem; /* Increased the icon size */
+    margin-right: 15px;
+}
+
+.footer .contacts span {
+    font-size: 1rem; /* Increased the font size */
+    color: #ffffff; /* Light gray text color */
+}
+
+.footer .logo {
+    display: flex; /* Ensure logo and company name are displayed in a flex container */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Align to the right */
+    max-width: 180px; /* Adjust the maximum width of the logo container */
+    text-align: right; /* Align logo to the right */
+    margin-left: auto; /* Push the logo to the far right */
+}
+
+.footer .logo img {
+    max-width: 100%; /* Ensure the logo fits within its container */
+    height: auto;
+    max-height: 150px; /* Limit the logo height */
+}
+
+.footer .company-name {
+    font-weight: bold;
+    margin-top: 5px; /* Add some space between logo and company name */
+    font-size: 1.8rem; /* Increased font size */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add letter spacing */
+    text-align: center; /* Center ASAAN name */
+    background: linear-gradient(90deg, #f2fa07, #b504fb, #6fff00);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.footer .company-name span {
+    color: #000; /* Black color for ASAAN */
+}
+
+.footer .copyright {
+    flex: 1 0 100%; /* Take full width */
+    margin-top: 20px; /* Add some space */
+    font-size: 0.8rem;
+    color: #ccc; /* Light gray text color */
+}
+
+@media (max-width: 768px) {
+    .footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .links,
+    .footer .hours,
+    .footer .contacts,
+    .footer .logo {
+        flex: 1 0 100%; /* Full width for each section on smaller screens */
+        margin-bottom: 10px; /* Add space between sections */
+    }
+
+    .footer .links h4,
+    .footer .hours h4,
+    .footer .contacts h4 {
+        font-size: 1rem; /* Decrease font size on smaller screens */
+    }
+
+    .footer .logo {
+        text-align: center;
+        margin-left: 0; /* Reset margin on smaller screens */
+    }
+
+    .footer .company-name {
+        text-align: center; /* Center ASAAN name on smaller screens */
+    }
+}
