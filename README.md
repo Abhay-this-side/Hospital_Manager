@@ -9,4 +9,4 @@ https://github.com/Abhay-this-side/Hospital_Manager/assets/96641498/94cee359-7cd
 
 Frontend URL: https://hospital-manager-theta.vercel.app/ (just an overview of frontend)
 
-Frontend is not connected to my backend and so it would not accept any details until I rum npm run dev command in my terminal and same is for dashboard.
+The front end is not connected to my backend so it would not accept any details until I run "npm run dev" command in my terminal and the same is true for the dashboard.
