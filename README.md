@@ -8,5 +8,9 @@ https://github.com/Abhay-this-side/Hospital_Manager/assets/96641498/94cee359-7cd
 
 
 Frontend URL: https://hospital-manager-theta.vercel.app/
+
+
 Backend URL : 
-Dashboard URL: 
+
+
+Dashboard URL: https://hospital-manager-9ecv.vercel.app/login
